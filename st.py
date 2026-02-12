@@ -1,6 +1,5 @@
 import streamlit as st
 import os
-from flask import session
 from openai import OpenAI
 from datetime import datetime
 import json
@@ -119,4 +118,5 @@ if prompt:
 
     st.session_state.message.append({'role': 'assistant', 'content':responsefull})
     save_session()
+
     print('调用的结果',responsefull)
