@@ -15,7 +15,7 @@ st.set_page_config(
     }
 )
 st.title("代码小助手")
-st.loge="./ruishao/微信图片_20260206162536_56_36.jpg"
+st.logo="./ruishao/微信图片_20260206162536_56_36.jpg"
 def get_time():
     return datetime.now().strftime("%Y-%m-%d %H-%M-%S")
 def save_session():
@@ -121,5 +121,6 @@ if prompt:
     save_session()
 
     print('调用的结果',responsefull)
+
 
 
