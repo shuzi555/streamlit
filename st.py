@@ -96,7 +96,7 @@ if prompt:
 
     st.session_state.message.append({'role': 'user', 'content': prompt})
 
-    client = OpenAI(api_key='sk-64a9242efc1149b6ade21c6029139aa0', base_url="https://api.deepseek.com")
+    client = OpenAI(api_key='', base_url="https://api.deepseek.com")
 
     response = client.chat.completions.create(
         model="deepseek-chat",
